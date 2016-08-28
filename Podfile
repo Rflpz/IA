@@ -8,7 +8,9 @@ target 'IA' do
   # Pods for IA
 	pod 'KVNProgress'
 	pod "AFNetworking", "~> 2.0"
-  target 'IATests' do
+	pod 'FMDB'
+
+target 'IATests' do
     inherit! :search_paths
     # Pods for testing
   end

@@ -11,5 +11,14 @@
 @interface RLRequest : NSObject
 - (void)getAllCitiesOnComplete:(void (^)(NSDictionary *response))successBlock
                         onError:(void (^)(NSError *error))errorBlock;
+- (void)getMoviesByCityWithID:(NSString *)cityID
+                   onComplete:(void (^)(NSString *response))success
+                       onError:(void (^)(NSString *error))error;
+- (void)getMoviesFromDBWithPath:(NSString *)fileName
+                     onComplete:(void (^)(NSMutableArray *response))successBlock
+                        onError:(void (^)(NSString *error))errorBlock;
+- (void)getPlacesFromDBWithPath:(NSString *)fileName
+                     onComplete:(void (^)(NSMutableArray *response))successBlock
+                        onError:(void (^)(NSString *error))errorBlock;
 
 @end

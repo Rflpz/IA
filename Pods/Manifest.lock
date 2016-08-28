@@ -20,16 +20,21 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - KVNProgress (2.3.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - FMDB
   - KVNProgress
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
 
-PODFILE CHECKSUM: b21a5e679aef00adf717e35f4b795f68ad3a8c92
+PODFILE CHECKSUM: 08a739a9c5af55bc2e3f83194b27c6a861b07207
 
 COCOAPODS: 1.0.1

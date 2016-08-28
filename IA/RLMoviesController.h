@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "RLCustomizer.h"
-@interface RLMoviesController : UIViewController
+#import "RLRequest.h"
 
+@interface RLMoviesController : UIViewController
+@property (strong, nonatomic) NSString *fileDB;
 @end

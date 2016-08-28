@@ -7,7 +7,8 @@
 //
 
 #import "RLCitiesController.h"
-
+#import <KVNProgress.h>
+#import "RLMoviesController.h"
 @interface RLCitiesController ()<UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) RLCustomizer *customizer;
 @property (strong, nonatomic) RLRequest *reqObj;
@@ -25,12 +26,9 @@
     _reqObj = [[RLRequest alloc] init];
     [self customizeView];
     [self refreshInfo:_refreshControl];
+}
 
-   
-}
-- (void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-}
+
 - (void)customizeView{
     self.navigationController.navigationBar.barTintColor = [_customizer colorFromHexString:@"#295999"];
     self.navigationController.navigationBar.translucent = NO;
@@ -46,11 +44,36 @@
     refreshControl.tintColor = [_customizer colorFromHexString:@"#ffcb06"];
     [_tableView addSubview:refreshControl];
     _refreshControl = refreshControl;
+
+//    NSString* content = [NSString stringWithContentsOfFile:testpath
+//                                                  encoding:NSUTF8StringEncoding
+//                                                     error:NULL];
+//    NSLog(@"%@ %@",testpath,content);
+    
+//    NSCharacterSet *newlineCharSet = [NSCharacterSet newlineCharacterSet];
+//    NSString* fileContents = [NSString stringWithContentsOfFile:testpath
+//                                                       encoding:NSUTF16StringEncoding
+//                                                          error:nil];
+//    NSArray *lines = [fileContents componentsSeparatedByCharactersInSet:newlineCharSet];
+//    
+//    NSLog(@"Lines \n%@",lines);
+//    
+//    NSError *error;
+//    NSString *strFileContent = [NSString stringWithContentsOfFile:testpath encoding:NSUTF16StringEncoding error:&error];
+//    
+//    if(error) {  //Handle error
+//        NSLog(@"error %@",error.description);
+//    }
+//    NSLog(@"%d",[[NSFileManager defaultManager] fileExistsAtPath:testpath]);
+//    NSLog(@"File content : %@ ", strFileContent);
+    
+
+    
 }
+
 - (void)refreshInfo:(UIRefreshControl *) sender {
     [self.refreshControl beginRefreshing];
     [_reqObj getAllCitiesOnComplete:^(NSDictionary *response){
-        NSLog(@"%@",response);
         _citiesArray = [[NSMutableArray alloc] init];
         for(NSDictionary *city in response){
             [_citiesArray addObject:city];
@@ -62,6 +85,7 @@
         [sender endRefreshing];
     }];
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifierCustom = @"RLCityCell";
     
@@ -78,7 +102,6 @@
     cell.cityCountry.text = [[city valueForKey:@"Pais"] uppercaseString];
     [cell setNeedsUpdateConstraints];
     [cell updateConstraintsIfNeeded];
-    
     return cell;
 }
 
@@ -86,8 +109,39 @@
     return _citiesArray.count;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSDictionary *city = _citiesArray[indexPath.row];
+    [KVNProgress showWithStatus:@"Cargando..."];
+    RLMoviesController *moviesController = [[RLMoviesController alloc]initWithNibName:@"RLMoviesController" bundle:nil];
+    moviesController.fileDB = [NSString stringWithFormat:@"db-%@.sqlite",[city valueForKey:@"Id"]];;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        NSUserDefaults *user = [NSUserDefaults standardUserDefaults];
+        if (![user valueForKey:[[city valueForKey:@"Id"] stringValue]]) {
+            [_reqObj getMoviesByCityWithID:[city valueForKey:@"Id"] onComplete:^(NSString *response){
+                NSLog(@"File saved at %@",response);
+                [user setObject:@"1" forKey:[[city valueForKey:@"Id"] stringValue]];
+                [user synchronize];
+                [KVNProgress showSuccessWithStatus:@"Listo" completion:^(void){
+                    [KVNProgress dismiss];
+                    [self.navigationController pushViewController:moviesController animated:YES];
+                }];
+            } onError:^(NSString *error){
+                [KVNProgress showErrorWithStatus:@"Vuelve a intentarlo" completion:^(void){
+                    [KVNProgress dismiss];
+                }];
+            }];
+            
+        }else{
+            
+            [KVNProgress showSuccessWithStatus:@"Listo" completion:^(void){
+                [KVNProgress dismiss];
+                [self.navigationController pushViewController:moviesController animated:YES];
+            }];
+        }
+    });
+    
+    
 }
 
 - (void)animateTable{
