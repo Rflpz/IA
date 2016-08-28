@@ -20,7 +20,7 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="52" id="K87-hS-rfk"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="21"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="19"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -29,31 +29,10 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="27" id="zh2-XE-PRC"/>
                         </constraints>
-                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yL-Qb-n5J">
-                        <rect key="frame" x="0.0" y="120" width="320" height="55"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEXICO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JGe-Tf-0j2">
-                                <rect key="frame" x="8" y="8" width="304" height="27"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="27" id="qIx-15-Pl6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="JGe-Tf-0j2" secondAttribute="trailing" constant="8" id="JZN-f7-x7r"/>
-                            <constraint firstAttribute="height" constant="55" id="O5J-Ic-c9M"/>
-                            <constraint firstItem="JGe-Tf-0j2" firstAttribute="leading" secondItem="1yL-Qb-n5J" secondAttribute="leading" constant="8" id="Xlz-7B-jE5"/>
-                            <constraint firstAttribute="bottom" secondItem="JGe-Tf-0j2" secondAttribute="bottom" constant="20" id="ahG-St-oFs"/>
-                        </constraints>
-                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vpd-VG-tJW">
                         <rect key="frame" x="279" y="49" width="27" height="27"/>
                         <constraints>
@@ -64,23 +43,43 @@
                             <attributedString key="attributedTitle"/>
                         </state>
                     </button>
+                    <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="05l-bd-fK0">
+                        <rect key="frame" x="0.0" y="121" width="320" height="37.5"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37.5" id="7Fz-sO-di5"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEXICO" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1e-Ei-L6k">
+                        <rect key="frame" x="8" y="127" width="304" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="27" id="bxn-db-HQc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Vyb-zR-S8H" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="32" id="3DB-yz-O5b"/>
+                    <constraint firstItem="w1e-Ei-L6k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="450-nP-fwL"/>
                     <constraint firstAttribute="trailingMargin" secondItem="vyO-UR-ZiD" secondAttribute="trailing" constant="32" id="4mU-0j-KnY"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="1yL-Qb-n5J" secondAttribute="trailing" constant="-8" id="5Ly-cR-QWW"/>
+                    <constraint firstItem="w1e-Ei-L6k" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="A8q-CM-ppV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="05l-bd-fK0" secondAttribute="bottom" constant="-8" id="BCJ-8S-8Tq"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Vyb-zR-S8H" secondAttribute="trailing" constant="32" id="BlQ-4k-O3l"/>
                     <constraint firstItem="Vyb-zR-S8H" firstAttribute="top" secondItem="vyO-UR-ZiD" secondAttribute="bottom" constant="8" id="F2T-Be-SR9"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="1yL-Qb-n5J" secondAttribute="bottom" constant="-24.5" id="F97-Pb-RV8"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Vpd-VG-tJW" secondAttribute="trailing" constant="6" id="Hhh-m8-rFI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="w1e-Ei-L6k" secondAttribute="bottom" constant="-3.5" id="RCK-vg-11C"/>
+                    <constraint firstItem="05l-bd-fK0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="nB0-fI-7Fg"/>
                     <constraint firstItem="vyO-UR-ZiD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="oX7-gk-f13"/>
                     <constraint firstItem="Vpd-VG-tJW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="41" id="pXP-0v-OhA"/>
-                    <constraint firstItem="1yL-Qb-n5J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="qCs-CH-e9t"/>
                     <constraint firstItem="vyO-UR-ZiD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="32" id="s4Q-KU-4WQ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="05l-bd-fK0" secondAttribute="trailing" constant="-8" id="xgo-E9-egh"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
-                <outlet property="cityCountry" destination="JGe-Tf-0j2" id="Ayf-QN-HGd"/>
+                <outlet property="cityCountry" destination="w1e-Ei-L6k" id="2Yg-jX-F4O"/>
                 <outlet property="cityName" destination="vyO-UR-ZiD" id="HBe-uB-2Hd"/>
                 <outlet property="cityNextButton" destination="Vpd-VG-tJW" id="mLR-kw-VWv"/>
                 <outlet property="cityState" destination="Vyb-zR-S8H" id="lFQ-Lo-7hT"/>

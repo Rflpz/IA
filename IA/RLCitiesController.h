@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RLRequest.h"
+#import "RLCustomizer.h"
+#import "RLCityCell.h"
 
 @interface RLCitiesController : UIViewController
 

@@ -7,10 +7,8 @@
 //
 
 #import "RLMoviesController.h"
-#import "RLRequest.h"
 @interface RLMoviesController ()
 @property (strong, nonatomic) RLCustomizer *customizer;
-@property (strong, nonatomic) RLRequest *reqObj;
 @end
 
 @implementation RLMoviesController
@@ -18,10 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _customizer = [[RLCustomizer alloc] init];
-    _reqObj = [[RLRequest alloc] init];
-    [_reqObj getAllCitiesOnComplete:^(NSDictionary *response){
-        NSLog(@"%@",response);
-    } onError:^(NSError *error){}];
+    
 }
 
 -(void)viewWillAppear:(BOOL)animated{

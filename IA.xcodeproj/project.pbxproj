@@ -20,6 +20,7 @@
 		8BB126C71D72B04200B95ED7 /* RLCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126C51D72B04200B95ED7 /* RLCityCell.m */; };
 		8BB126C81D72B04200B95ED7 /* RLCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126C61D72B04200B95ED7 /* RLCityCell.xib */; };
 		8BB126CA1D72B28E00B95ED7 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126C91D72B28E00B95ED7 /* next.png */; };
+		8BB126CC1D72B5F000B95ED7 /* lg-cinepolis.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126CB1D72B5F000B95ED7 /* lg-cinepolis.png */; };
 		8BDD588A1D72A2B70066B7C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD58891D72A2B70066B7C0 /* main.m */; };
 		8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD588C1D72A2B70066B7C0 /* AppDelegate.m */; };
 		8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD588E1D72A2B70066B7C0 /* IA-Prefix.pch */; };
@@ -70,6 +71,7 @@
 		8BB126C51D72B04200B95ED7 /* RLCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCityCell.m; sourceTree = "<group>"; };
 		8BB126C61D72B04200B95ED7 /* RLCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLCityCell.xib; sourceTree = "<group>"; };
 		8BB126C91D72B28E00B95ED7 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		8BB126CB1D72B5F000B95ED7 /* lg-cinepolis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lg-cinepolis.png"; sourceTree = "<group>"; };
 		8BDD58851D72A2B70066B7C0 /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDD58891D72A2B70066B7C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BDD588B1D72A2B70066B7C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 		8BB126B61D72A97600B95ED7 /* Resources outside */ = {
 			isa = PBXGroup;
 			children = (
+				8BB126CB1D72B5F000B95ED7 /* lg-cinepolis.png */,
 				8BB126C91D72B28E00B95ED7 /* next.png */,
 			);
 			name = "Resources outside";
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BB126C81D72B04200B95ED7 /* RLCityCell.xib in Resources */,
+				8BB126CC1D72B5F000B95ED7 /* lg-cinepolis.png in Resources */,
 				8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */,
 				8BB126CA1D72B28E00B95ED7 /* next.png in Resources */,
 				8BDD58941D72A2B70066B7C0 /* LaunchScreen.storyboard in Resources */,
