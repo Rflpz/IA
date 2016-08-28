@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface RLRequest : NSObject
+- (void)getAllCitiesOnComplete:(void (^)(NSDictionary *response))successBlock
+                        onError:(void (^)(NSError *error))errorBlock;
 
 @end

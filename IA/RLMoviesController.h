@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "RLCustomizer.h"
 @interface RLMoviesController : UIViewController
 
 @end

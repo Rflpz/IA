@@ -19,8 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //Initialize all objects
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    RLMoviesController *moviesController = [[RLMoviesController alloc]initWithNibName:@"RLMoviesController" bundle:nil];
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:moviesController];
+    RLCitiesController *citiesController = [[RLCitiesController alloc]initWithNibName:@"RLCitiesController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:citiesController];
     self.window.rootViewController = navController;
     
     //Customize tint color

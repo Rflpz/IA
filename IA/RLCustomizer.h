@@ -10,4 +10,5 @@
 #import <UIKit/UIKit.h>
 @interface RLCustomizer : NSObject
 - (UIColor *)colorFromHexString:(NSString *)hexString;
+- (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 @end

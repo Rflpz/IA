@@ -13,6 +13,13 @@
 		8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */; };
 		8BB126B31D72A5D200B95ED7 /* RLCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126B21D72A5D200B95ED7 /* RLCustomizer.m */; };
 		8BB126B51D72A64500B95ED7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB126B41D72A64500B95ED7 /* UIKit.framework */; };
+		8BB126BB1D72AE7700B95ED7 /* RLMovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126B91D72AE7700B95ED7 /* RLMovieCell.m */; };
+		8BB126BC1D72AE7700B95ED7 /* RLMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126BA1D72AE7700B95ED7 /* RLMovieCell.xib */; };
+		8BB126C11D72AFD800B95ED7 /* RLCitiesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126BF1D72AFD800B95ED7 /* RLCitiesController.m */; };
+		8BB126C21D72AFD800B95ED7 /* RLCitiesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126C01D72AFD800B95ED7 /* RLCitiesController.xib */; };
+		8BB126C71D72B04200B95ED7 /* RLCityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126C51D72B04200B95ED7 /* RLCityCell.m */; };
+		8BB126C81D72B04200B95ED7 /* RLCityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126C61D72B04200B95ED7 /* RLCityCell.xib */; };
+		8BB126CA1D72B28E00B95ED7 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126C91D72B28E00B95ED7 /* next.png */; };
 		8BDD588A1D72A2B70066B7C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD58891D72A2B70066B7C0 /* main.m */; };
 		8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD588C1D72A2B70066B7C0 /* AppDelegate.m */; };
 		8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD588E1D72A2B70066B7C0 /* IA-Prefix.pch */; };
@@ -53,6 +60,16 @@
 		8BB126B11D72A5D200B95ED7 /* RLCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCustomizer.h; sourceTree = "<group>"; };
 		8BB126B21D72A5D200B95ED7 /* RLCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCustomizer.m; sourceTree = "<group>"; };
 		8BB126B41D72A64500B95ED7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8BB126B81D72AE7700B95ED7 /* RLMovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMovieCell.h; sourceTree = "<group>"; };
+		8BB126B91D72AE7700B95ED7 /* RLMovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMovieCell.m; sourceTree = "<group>"; };
+		8BB126BA1D72AE7700B95ED7 /* RLMovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMovieCell.xib; sourceTree = "<group>"; };
+		8BB126BE1D72AFD800B95ED7 /* RLCitiesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCitiesController.h; sourceTree = "<group>"; };
+		8BB126BF1D72AFD800B95ED7 /* RLCitiesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCitiesController.m; sourceTree = "<group>"; };
+		8BB126C01D72AFD800B95ED7 /* RLCitiesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLCitiesController.xib; sourceTree = "<group>"; };
+		8BB126C41D72B04200B95ED7 /* RLCityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCityCell.h; sourceTree = "<group>"; };
+		8BB126C51D72B04200B95ED7 /* RLCityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCityCell.m; sourceTree = "<group>"; };
+		8BB126C61D72B04200B95ED7 /* RLCityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLCityCell.xib; sourceTree = "<group>"; };
+		8BB126C91D72B28E00B95ED7 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		8BDD58851D72A2B70066B7C0 /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDD58891D72A2B70066B7C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BDD588B1D72A2B70066B7C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -130,6 +147,7 @@
 				8BB126AA1D72A56700B95ED7 /* RLMoviesController.h */,
 				8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */,
 				8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */,
+				8BB126B71D72AE5A00B95ED7 /* RLMovieCell */,
 			);
 			name = RLMovies;
 			sourceTree = "<group>";
@@ -143,10 +161,50 @@
 			name = RLCustomizer;
 			sourceTree = "<group>";
 		};
+		8BB126B61D72A97600B95ED7 /* Resources outside */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126C91D72B28E00B95ED7 /* next.png */,
+			);
+			name = "Resources outside";
+			sourceTree = "<group>";
+		};
+		8BB126B71D72AE5A00B95ED7 /* RLMovieCell */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126B81D72AE7700B95ED7 /* RLMovieCell.h */,
+				8BB126B91D72AE7700B95ED7 /* RLMovieCell.m */,
+				8BB126BA1D72AE7700B95ED7 /* RLMovieCell.xib */,
+			);
+			name = RLMovieCell;
+			sourceTree = "<group>";
+		};
+		8BB126BD1D72AFC800B95ED7 /* RLCities */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126BE1D72AFD800B95ED7 /* RLCitiesController.h */,
+				8BB126BF1D72AFD800B95ED7 /* RLCitiesController.m */,
+				8BB126C01D72AFD800B95ED7 /* RLCitiesController.xib */,
+				8BB126C31D72B02B00B95ED7 /* RLCityCell */,
+			);
+			name = RLCities;
+			sourceTree = "<group>";
+		};
+		8BB126C31D72B02B00B95ED7 /* RLCityCell */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126C41D72B04200B95ED7 /* RLCityCell.h */,
+				8BB126C51D72B04200B95ED7 /* RLCityCell.m */,
+				8BB126C61D72B04200B95ED7 /* RLCityCell.xib */,
+			);
+			name = RLCityCell;
+			sourceTree = "<group>";
+		};
 		8BDD587C1D72A2B70066B7C0 = {
 			isa = PBXGroup;
 			children = (
 				8BDD58871D72A2B70066B7C0 /* IA */,
+				8BB126B61D72A97600B95ED7 /* Resources outside */,
 				8BDD589D1D72A2B70066B7C0 /* IATests */,
 				8BDD58A81D72A2B70066B7C0 /* IAUITests */,
 				8BDD58861D72A2B70066B7C0 /* Products */,
@@ -219,6 +277,7 @@
 		8BDD58B81D72A33C0066B7C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BB126BD1D72AFC800B95ED7 /* RLCities */,
 				8BB126AF1D72A56B00B95ED7 /* RLMovies */,
 			);
 			name = ViewControllers;
@@ -348,10 +407,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB126C81D72B04200B95ED7 /* RLCityCell.xib in Resources */,
 				8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */,
+				8BB126CA1D72B28E00B95ED7 /* next.png in Resources */,
 				8BDD58941D72A2B70066B7C0 /* LaunchScreen.storyboard in Resources */,
+				8BB126C21D72AFD800B95ED7 /* RLCitiesController.xib in Resources */,
 				8BDD58911D72A2B70066B7C0 /* Assets.xcassets in Resources */,
 				8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */,
+				8BB126BC1D72AE7700B95ED7 /* RLMovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +566,9 @@
 				8BB126B31D72A5D200B95ED7 /* RLCustomizer.m in Sources */,
 				8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */,
 				8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */,
+				8BB126C11D72AFD800B95ED7 /* RLCitiesController.m in Sources */,
+				8BB126BB1D72AE7700B95ED7 /* RLMovieCell.m in Sources */,
+				8BB126C71D72B04200B95ED7 /* RLCityCell.m in Sources */,
 				8BDD588A1D72A2B70066B7C0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
