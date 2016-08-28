@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -16,9 +17,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //Initialize all objects
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    RLMoviesController *moviesController = [[RLMoviesController alloc]initWithNibName:@"RLMoviesController" bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:moviesController];
+    self.window.rootViewController = navController;
+    
+    //Customize tint color
+    RLCustomizer *customizer = [[RLCustomizer alloc] init];
+    [self.window setTintColor:[customizer colorFromHexString:@"#003DA5"]];
+    
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

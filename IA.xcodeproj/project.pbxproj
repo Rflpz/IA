@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4890E0477088F9423ECC7455 /* libPods-IA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A157663565E8BE541CB6F3F3 /* libPods-IA.a */; };
+		8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126A81D72A4C700B95ED7 /* RLRequest.m */; };
+		8BB126AD1D72A56700B95ED7 /* RLMoviesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */; };
+		8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */; };
+		8BB126B31D72A5D200B95ED7 /* RLCustomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126B21D72A5D200B95ED7 /* RLCustomizer.m */; };
+		8BB126B51D72A64500B95ED7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BB126B41D72A64500B95ED7 /* UIKit.framework */; };
 		8BDD588A1D72A2B70066B7C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD58891D72A2B70066B7C0 /* main.m */; };
 		8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD588C1D72A2B70066B7C0 /* AppDelegate.m */; };
 		8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */ = {isa = PBXBuildFile; fileRef = 8BDD588E1D72A2B70066B7C0 /* IA-Prefix.pch */; };
@@ -40,6 +45,14 @@
 		130E4B317331E6A7027C7470 /* Pods-IAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IAUITests/Pods-IAUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		160FFB120A7B5DE5B1B24E05 /* Pods-IA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IA.release.xcconfig"; path = "Pods/Target Support Files/Pods-IA/Pods-IA.release.xcconfig"; sourceTree = "<group>"; };
 		82FA374685B8CE5C57E46585 /* Pods-IAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IAUITests/Pods-IAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8BB126A71D72A4C700B95ED7 /* RLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequest.h; sourceTree = "<group>"; };
+		8BB126A81D72A4C700B95ED7 /* RLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRequest.m; sourceTree = "<group>"; };
+		8BB126AA1D72A56700B95ED7 /* RLMoviesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMoviesController.h; sourceTree = "<group>"; };
+		8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMoviesController.m; sourceTree = "<group>"; };
+		8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMoviesController.xib; sourceTree = "<group>"; };
+		8BB126B11D72A5D200B95ED7 /* RLCustomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLCustomizer.h; sourceTree = "<group>"; };
+		8BB126B21D72A5D200B95ED7 /* RLCustomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLCustomizer.m; sourceTree = "<group>"; };
+		8BB126B41D72A64500B95ED7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		8BDD58851D72A2B70066B7C0 /* IA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDD58891D72A2B70066B7C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8BDD588B1D72A2B70066B7C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB126B51D72A64500B95ED7 /* UIKit.framework in Frameworks */,
 				4890E0477088F9423ECC7455 /* libPods-IA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,11 +107,40 @@
 		61033C73BA0252E986EB731E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8BB126B41D72A64500B95ED7 /* UIKit.framework */,
 				A157663565E8BE541CB6F3F3 /* libPods-IA.a */,
 				DAC42B77A30C39CA0CFC19EC /* libPods-IATests.a */,
 				929920DA04CEAF7AC0237D14 /* libPods-IAUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BB126A61D72A4BB00B95ED7 /* RLRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126A71D72A4C700B95ED7 /* RLRequest.h */,
+				8BB126A81D72A4C700B95ED7 /* RLRequest.m */,
+			);
+			name = RLRequest;
+			sourceTree = "<group>";
+		};
+		8BB126AF1D72A56B00B95ED7 /* RLMovies */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126AA1D72A56700B95ED7 /* RLMoviesController.h */,
+				8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */,
+				8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */,
+			);
+			name = RLMovies;
+			sourceTree = "<group>";
+		};
+		8BB126B01D72A5A800B95ED7 /* RLCustomizer */ = {
+			isa = PBXGroup;
+			children = (
+				8BB126B11D72A5D200B95ED7 /* RLCustomizer.h */,
+				8BB126B21D72A5D200B95ED7 /* RLCustomizer.m */,
+			);
+			name = RLCustomizer;
 			sourceTree = "<group>";
 		};
 		8BDD587C1D72A2B70066B7C0 = {
@@ -125,6 +168,8 @@
 		8BDD58871D72A2B70066B7C0 /* IA */ = {
 			isa = PBXGroup;
 			children = (
+				8BB126B01D72A5A800B95ED7 /* RLCustomizer */,
+				8BB126A61D72A4BB00B95ED7 /* RLRequest */,
 				8BDD58B81D72A33C0066B7C0 /* ViewControllers */,
 				8BDD58B71D72A3320066B7C0 /* App delegate */,
 				8BDD588E1D72A2B70066B7C0 /* IA-Prefix.pch */,
@@ -174,6 +219,7 @@
 		8BDD58B81D72A33C0066B7C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8BB126AF1D72A56B00B95ED7 /* RLMovies */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -302,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */,
 				8BDD58941D72A2B70066B7C0 /* LaunchScreen.storyboard in Resources */,
 				8BDD58911D72A2B70066B7C0 /* Assets.xcassets in Resources */,
 				8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */,
@@ -452,6 +499,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BB126AD1D72A56700B95ED7 /* RLMoviesController.m in Sources */,
+				8BB126B31D72A5D200B95ED7 /* RLCustomizer.m in Sources */,
+				8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */,
 				8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */,
 				8BDD588A1D72A2B70066B7C0 /* main.m in Sources */,
 			);
