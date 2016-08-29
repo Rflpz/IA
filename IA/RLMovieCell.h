@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RLMovieCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *movieImage;
+@property (weak, nonatomic) IBOutlet UILabel *movieGenere;
 @property (weak, nonatomic) IBOutlet UILabel *movieName;
 
 @end

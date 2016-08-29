@@ -8,6 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		4890E0477088F9423ECC7455 /* libPods-IA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A157663565E8BE541CB6F3F3 /* libPods-IA.a */; };
+		8B11D3B11D735EBE00E8B018 /* RLPlacesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D3AF1D735EBE00E8B018 /* RLPlacesController.m */; };
+		8B11D3B21D735EBE00E8B018 /* RLPlacesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3B01D735EBE00E8B018 /* RLPlacesController.xib */; };
+		8B11D3B41D73600300E8B018 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3B31D73600300E8B018 /* back.png */; };
+		8B11D3B91D7360F700E8B018 /* RLPlaceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D3B71D7360F700E8B018 /* RLPlaceCell.m */; };
+		8B11D3BA1D7360F700E8B018 /* RLPlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3B81D7360F700E8B018 /* RLPlaceCell.xib */; };
+		8B11D3BC1D73614500E8B018 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3BB1D73614500E8B018 /* compass.png */; };
+		8B11D3C11D73651F00E8B018 /* RLMapPlaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D3BF1D73651F00E8B018 /* RLMapPlaceController.m */; };
+		8B11D3C21D73651F00E8B018 /* RLMapPlaceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3C01D73651F00E8B018 /* RLMapPlaceController.xib */; };
+		8B11D3C61D73679700E8B018 /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3C41D73679700E8B018 /* pin.png */; };
+		8B11D3C81D7368DE00E8B018 /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3C71D7368DE00E8B018 /* route.png */; };
+		8B11D3CA1D73693D00E8B018 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3C91D73693D00E8B018 /* close.png */; };
+		8B11D3CC1D73F91B00E8B018 /* earth.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3CB1D73F91B00E8B018 /* earth.png */; };
+		8B11D3CF1D73FB8100E8B018 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B11D3CE1D73FB8100E8B018 /* MapKit.framework */; };
+		8B11D3D11D73FB8900E8B018 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B11D3D01D73FB8900E8B018 /* CoreLocation.framework */; };
+		8B11D3D81D7403C900E8B018 /* RLWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D3D61D7403C900E8B018 /* RLWebController.m */; };
+		8B11D3D91D7403C900E8B018 /* RLWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3D71D7403C900E8B018 /* RLWebController.xib */; };
 		8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126A81D72A4C700B95ED7 /* RLRequest.m */; };
 		8BB126AD1D72A56700B95ED7 /* RLMoviesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */; };
 		8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */; };
@@ -55,6 +71,27 @@
 		130E4B317331E6A7027C7470 /* Pods-IAUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IAUITests/Pods-IAUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		160FFB120A7B5DE5B1B24E05 /* Pods-IA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IA.release.xcconfig"; path = "Pods/Target Support Files/Pods-IA/Pods-IA.release.xcconfig"; sourceTree = "<group>"; };
 		82FA374685B8CE5C57E46585 /* Pods-IAUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IAUITests/Pods-IAUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8B11D3AE1D735EBE00E8B018 /* RLPlacesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLPlacesController.h; sourceTree = "<group>"; };
+		8B11D3AF1D735EBE00E8B018 /* RLPlacesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPlacesController.m; sourceTree = "<group>"; };
+		8B11D3B01D735EBE00E8B018 /* RLPlacesController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLPlacesController.xib; sourceTree = "<group>"; };
+		8B11D3B31D73600300E8B018 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		8B11D3B61D7360F700E8B018 /* RLPlaceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLPlaceCell.h; sourceTree = "<group>"; };
+		8B11D3B71D7360F700E8B018 /* RLPlaceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLPlaceCell.m; sourceTree = "<group>"; };
+		8B11D3B81D7360F700E8B018 /* RLPlaceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLPlaceCell.xib; sourceTree = "<group>"; };
+		8B11D3BB1D73614500E8B018 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		8B11D3BE1D73651F00E8B018 /* RLMapPlaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMapPlaceController.h; sourceTree = "<group>"; };
+		8B11D3BF1D73651F00E8B018 /* RLMapPlaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMapPlaceController.m; sourceTree = "<group>"; };
+		8B11D3C01D73651F00E8B018 /* RLMapPlaceController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMapPlaceController.xib; sourceTree = "<group>"; };
+		8B11D3C41D73679700E8B018 /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		8B11D3C71D7368DE00E8B018 /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route.png; sourceTree = "<group>"; };
+		8B11D3C91D73693D00E8B018 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		8B11D3CB1D73F91B00E8B018 /* earth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = earth.png; sourceTree = "<group>"; };
+		8B11D3CE1D73FB8100E8B018 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8B11D3D01D73FB8900E8B018 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8B11D3D21D73FF5100E8B018 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		8B11D3D51D7403C900E8B018 /* RLWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLWebController.h; sourceTree = "<group>"; };
+		8B11D3D61D7403C900E8B018 /* RLWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLWebController.m; sourceTree = "<group>"; };
+		8B11D3D71D7403C900E8B018 /* RLWebController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLWebController.xib; sourceTree = "<group>"; };
 		8BB126A71D72A4C700B95ED7 /* RLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequest.h; sourceTree = "<group>"; };
 		8BB126A81D72A4C700B95ED7 /* RLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRequest.m; sourceTree = "<group>"; };
 		8BB126AA1D72A56700B95ED7 /* RLMoviesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMoviesController.h; sourceTree = "<group>"; };
@@ -103,6 +140,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B11D3D11D73FB8900E8B018 /* CoreLocation.framework in Frameworks */,
+				8B11D3CF1D73FB8100E8B018 /* MapKit.framework in Frameworks */,
 				8BB126D01D72E7DC00B95ED7 /* libsqlite3.0.tbd in Frameworks */,
 				8BB126CE1D72E7D400B95ED7 /* libsqlite3.tbd in Frameworks */,
 				8BB126B51D72A64500B95ED7 /* UIKit.framework in Frameworks */,
@@ -132,6 +171,9 @@
 		61033C73BA0252E986EB731E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8B11D3D21D73FF5100E8B018 /* SafariServices.framework */,
+				8B11D3D01D73FB8900E8B018 /* CoreLocation.framework */,
+				8B11D3CE1D73FB8100E8B018 /* MapKit.framework */,
 				8BB126CF1D72E7DC00B95ED7 /* libsqlite3.0.tbd */,
 				8BB126CD1D72E7D400B95ED7 /* libsqlite3.tbd */,
 				8BB126B41D72A64500B95ED7 /* UIKit.framework */,
@@ -140,6 +182,48 @@
 				929920DA04CEAF7AC0237D14 /* libPods-IAUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B11D3AD1D735EAE00E8B018 /* RLPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				8B11D3AE1D735EBE00E8B018 /* RLPlacesController.h */,
+				8B11D3AF1D735EBE00E8B018 /* RLPlacesController.m */,
+				8B11D3B01D735EBE00E8B018 /* RLPlacesController.xib */,
+				8B11D3BD1D73650800E8B018 /* RLMapPlace */,
+				8B11D3B51D7360E500E8B018 /* RLPlaceCell */,
+			);
+			name = RLPlaces;
+			sourceTree = "<group>";
+		};
+		8B11D3B51D7360E500E8B018 /* RLPlaceCell */ = {
+			isa = PBXGroup;
+			children = (
+				8B11D3B61D7360F700E8B018 /* RLPlaceCell.h */,
+				8B11D3B71D7360F700E8B018 /* RLPlaceCell.m */,
+				8B11D3B81D7360F700E8B018 /* RLPlaceCell.xib */,
+			);
+			name = RLPlaceCell;
+			sourceTree = "<group>";
+		};
+		8B11D3BD1D73650800E8B018 /* RLMapPlace */ = {
+			isa = PBXGroup;
+			children = (
+				8B11D3BE1D73651F00E8B018 /* RLMapPlaceController.h */,
+				8B11D3BF1D73651F00E8B018 /* RLMapPlaceController.m */,
+				8B11D3C01D73651F00E8B018 /* RLMapPlaceController.xib */,
+			);
+			name = RLMapPlace;
+			sourceTree = "<group>";
+		};
+		8B11D3D41D7403C000E8B018 /* RLWeb */ = {
+			isa = PBXGroup;
+			children = (
+				8B11D3D51D7403C900E8B018 /* RLWebController.h */,
+				8B11D3D61D7403C900E8B018 /* RLWebController.m */,
+				8B11D3D71D7403C900E8B018 /* RLWebController.xib */,
+			);
+			name = RLWeb;
 			sourceTree = "<group>";
 		};
 		8BB126A61D72A4BB00B95ED7 /* RLRequest */ = {
@@ -174,6 +258,12 @@
 		8BB126B61D72A97600B95ED7 /* Resources outside */ = {
 			isa = PBXGroup;
 			children = (
+				8B11D3CB1D73F91B00E8B018 /* earth.png */,
+				8B11D3C91D73693D00E8B018 /* close.png */,
+				8B11D3C71D7368DE00E8B018 /* route.png */,
+				8B11D3C41D73679700E8B018 /* pin.png */,
+				8B11D3BB1D73614500E8B018 /* compass.png */,
+				8B11D3B31D73600300E8B018 /* back.png */,
 				8BB126CB1D72B5F000B95ED7 /* lg-cinepolis.png */,
 				8BB126C91D72B28E00B95ED7 /* next.png */,
 			);
@@ -288,6 +378,8 @@
 		8BDD58B81D72A33C0066B7C0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				8B11D3D41D7403C000E8B018 /* RLWeb */,
+				8B11D3AD1D735EAE00E8B018 /* RLPlaces */,
 				8BB126BD1D72AFC800B95ED7 /* RLCities */,
 				8BB126AF1D72A56B00B95ED7 /* RLMovies */,
 			);
@@ -382,6 +474,7 @@
 				TargetAttributes = {
 					8BDD58841D72A2B70066B7C0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 4AZJQ67WK2;
 					};
 					8BDD58991D72A2B70066B7C0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -422,11 +515,21 @@
 				8BB126CC1D72B5F000B95ED7 /* lg-cinepolis.png in Resources */,
 				8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */,
 				8BB126CA1D72B28E00B95ED7 /* next.png in Resources */,
+				8B11D3C21D73651F00E8B018 /* RLMapPlaceController.xib in Resources */,
+				8B11D3C61D73679700E8B018 /* pin.png in Resources */,
 				8BDD58941D72A2B70066B7C0 /* LaunchScreen.storyboard in Resources */,
+				8B11D3B21D735EBE00E8B018 /* RLPlacesController.xib in Resources */,
 				8BB126C21D72AFD800B95ED7 /* RLCitiesController.xib in Resources */,
+				8B11D3B41D73600300E8B018 /* back.png in Resources */,
 				8BDD58911D72A2B70066B7C0 /* Assets.xcassets in Resources */,
+				8B11D3C81D7368DE00E8B018 /* route.png in Resources */,
 				8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */,
+				8B11D3D91D7403C900E8B018 /* RLWebController.xib in Resources */,
 				8BB126BC1D72AE7700B95ED7 /* RLMovieCell.xib in Resources */,
+				8B11D3CC1D73F91B00E8B018 /* earth.png in Resources */,
+				8B11D3BA1D7360F700E8B018 /* RLPlaceCell.xib in Resources */,
+				8B11D3CA1D73693D00E8B018 /* close.png in Resources */,
+				8B11D3BC1D73614500E8B018 /* compass.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,14 +677,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B11D3D81D7403C900E8B018 /* RLWebController.m in Sources */,
 				8BB126AD1D72A56700B95ED7 /* RLMoviesController.m in Sources */,
+				8B11D3B91D7360F700E8B018 /* RLPlaceCell.m in Sources */,
 				8BB126B31D72A5D200B95ED7 /* RLCustomizer.m in Sources */,
 				8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */,
 				8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */,
 				8BB126C11D72AFD800B95ED7 /* RLCitiesController.m in Sources */,
 				8BB126BB1D72AE7700B95ED7 /* RLMovieCell.m in Sources */,
+				8B11D3B11D735EBE00E8B018 /* RLPlacesController.m in Sources */,
 				8BB126C71D72B04200B95ED7 /* RLCityCell.m in Sources */,
 				8BDD588A1D72A2B70066B7C0 /* main.m in Sources */,
+				8B11D3C11D73651F00E8B018 /* RLMapPlaceController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,6 +822,7 @@
 			baseConfigurationReference = F4D8A6B7CF082574D892D67F /* Pods-IA.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -728,6 +836,7 @@
 			baseConfigurationReference = 160FFB120A7B5DE5B1B24E05 /* Pods-IA.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IA/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

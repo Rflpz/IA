@@ -15,6 +15,7 @@
                    onComplete:(void (^)(NSString *response))success
                        onError:(void (^)(NSString *error))error;
 - (void)getMoviesFromDBWithPath:(NSString *)fileName
+                     andIdPlace:(NSString *)idPlace
                      onComplete:(void (^)(NSMutableArray *response))successBlock
                         onError:(void (^)(NSString *error))errorBlock;
 - (void)getPlacesFromDBWithPath:(NSString *)fileName

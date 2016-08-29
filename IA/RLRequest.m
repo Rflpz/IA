@@ -58,6 +58,7 @@ static NSString *const METHOD_GET_MOVIES_BY_CITY = @"sqlite.aspx?idCiudad=";
     }
 }
 - (void)getMoviesFromDBWithPath:(NSString *)fileName
+                     andIdPlace:(NSString *)idPlace
                      onComplete:(void (^)(NSMutableArray *response))successBlock
                         onError:(void (^)(NSString *error))errorBlock{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
@@ -66,12 +67,19 @@ static NSString *const METHOD_GET_MOVIES_BY_CITY = @"sqlite.aspx?idCiudad=";
     NSString *pathDB = [documentsDirectory stringByAppendingPathComponent:fileName];
     FMDatabase *db = [FMDatabase databaseWithPath:pathDB];
     if ([db open]) {
-        FMResultSet *s = [db executeQuery:@"SELECT * FROM Pelicula"];
-        NSMutableArray *moviesNames = [[NSMutableArray alloc] init];
+        FMResultSet *s = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM Pelicula INNER JOIN Cartelera ON (Pelicula.Id == Cartelera.IdPelicula AND Cartelera.IdComplejo = %@) GROUP BY Pelicula.Id",idPlace]];
+        NSMutableArray *movies = [[NSMutableArray alloc] init];
         while ([s next]) {
-            [moviesNames addObject:[s stringForColumn:@"Genero"]];
+            NSMutableDictionary *movie = [[NSMutableDictionary alloc] init];
+            [movie setObject:[s stringForColumn:@"Titulo"] forKey:@"Titulo"];
+            [movie setObject:[s stringForColumn:@"Id"] forKey:@"Id"];
+            [movie setObject:[s stringForColumn:@"Genero"] forKey:@"Genero"];
+            [movie setObject:[s stringForColumn:@"Clasificacion"] forKey:@"Clasificacion"];
+            [movie setObject:[s stringForColumn:@"Director"] forKey:@"Director"];
+            [movie setObject:[s stringForColumn:@"Sinopsis"] forKey:@"Sinopsis"];
+            [movies addObject:movie];
         }
-        successBlock(moviesNames);
+        successBlock(movies);
     }else{
         errorBlock(@"The file name can't be loaded");
     }
@@ -88,16 +96,18 @@ static NSString *const METHOD_GET_MOVIES_BY_CITY = @"sqlite.aspx?idCiudad=";
     FMDatabase *db = [FMDatabase databaseWithPath:pathDB];
     if ([db open]) {
         FMResultSet *s = [db executeQuery:@"SELECT * FROM Complejo"];
-        NSMutableArray *moviesNames = [[NSMutableArray alloc] init];
+        NSMutableArray *places = [[NSMutableArray alloc] init];
         while ([s next]) {
             NSMutableDictionary *place = [[NSMutableDictionary alloc] init];
             [place setObject:[s stringForColumn:@"Nombre"] forKey:@"Nombre"];
+            [place setObject:[s stringForColumn:@"Id"] forKey:@"Id"];
             [place setObject:[s stringForColumn:@"Direccion"] forKey:@"Direccion"];
             [place setObject:[s stringForColumn:@"Latitud"] forKey:@"Latitud"];
             [place setObject:[s stringForColumn:@"Longitud"] forKey:@"Longitud"];
-            [moviesNames addObject:place];
+            [place setObject:[s stringForColumn:@"Telefono"] forKey:@"Telefono"];
+            [places addObject:place];
         }
-        successBlock(moviesNames);
+        successBlock(places);
     }else{
         errorBlock(@"The file name can't be loaded");
     }
