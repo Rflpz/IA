@@ -12,4 +12,5 @@
 
 @interface RLMoviesController : UIViewController
 @property  (strong, nonatomic) NSMutableArray *moviesArray;
+@property (strong, nonatomic) NSString *fileDB;
 @end

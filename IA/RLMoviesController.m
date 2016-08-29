@@ -8,6 +8,7 @@
 
 #import "RLMoviesController.h"
 #import "RLMovieCell.h"
+#import "RLMovieDetailController.h"
 @interface RLMoviesController ()
 @property (strong, nonatomic) RLCustomizer *customizer;
 @property (strong, nonatomic) RLRequest *reqObj;
@@ -55,6 +56,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)sectio{
     return _moviesArray.count;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    RLMovieDetailController *movieDetailController = [[RLMovieDetailController alloc] initWithNibName:@"RLMovieDetailController" bundle:nil];
+    movieDetailController.movie = _moviesArray[indexPath.row];
+    movieDetailController.fileDB = _fileDB;
+    [self.navigationController pushViewController:movieDetailController animated:YES];
 }
 - (void)animateTable{
     [_tableView reloadData];

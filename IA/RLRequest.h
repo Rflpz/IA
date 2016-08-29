@@ -21,5 +21,9 @@
 - (void)getPlacesFromDBWithPath:(NSString *)fileName
                      onComplete:(void (^)(NSMutableArray *response))successBlock
                         onError:(void (^)(NSString *error))errorBlock;
+- (void)getImagesOfMovieFromDBWithPath:(NSString *)fileName
+                           withIdImage:(NSString *)imageId
+                            onComplete:(void (^)(NSMutableArray *response))successBlock
+                               onError:(void (^)(NSString *error))errorBlock;
 
 @end

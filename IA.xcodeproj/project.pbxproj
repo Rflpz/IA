@@ -24,6 +24,12 @@
 		8B11D3D11D73FB8900E8B018 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B11D3D01D73FB8900E8B018 /* CoreLocation.framework */; };
 		8B11D3D81D7403C900E8B018 /* RLWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D3D61D7403C900E8B018 /* RLWebController.m */; };
 		8B11D3D91D7403C900E8B018 /* RLWebController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3D71D7403C900E8B018 /* RLWebController.xib */; };
+		8B11D3DE1D741BD800E8B018 /* RLMovieDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B11D3DC1D741BD800E8B018 /* RLMovieDetailController.m */; };
+		8B11D3DF1D741BD800E8B018 /* RLMovieDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B11D3DD1D741BD800E8B018 /* RLMovieDetailController.xib */; };
+		8B25CDA61D742B9B0031DF3F /* RLGalleryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B25CDA41D742B9B0031DF3F /* RLGalleryController.m */; };
+		8B25CDA71D742B9B0031DF3F /* RLGalleryController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B25CDA51D742B9B0031DF3F /* RLGalleryController.xib */; };
+		8B25CDAC1D742CF00031DF3F /* RLImageChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B25CDAA1D742CF00031DF3F /* RLImageChildController.m */; };
+		8B25CDAD1D742CF00031DF3F /* RLImageChildController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B25CDAB1D742CF00031DF3F /* RLImageChildController.xib */; };
 		8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126A81D72A4C700B95ED7 /* RLRequest.m */; };
 		8BB126AD1D72A56700B95ED7 /* RLMoviesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */; };
 		8BB126AE1D72A56700B95ED7 /* RLMoviesController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */; };
@@ -92,6 +98,15 @@
 		8B11D3D51D7403C900E8B018 /* RLWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLWebController.h; sourceTree = "<group>"; };
 		8B11D3D61D7403C900E8B018 /* RLWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLWebController.m; sourceTree = "<group>"; };
 		8B11D3D71D7403C900E8B018 /* RLWebController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLWebController.xib; sourceTree = "<group>"; };
+		8B11D3DB1D741BD800E8B018 /* RLMovieDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMovieDetailController.h; sourceTree = "<group>"; };
+		8B11D3DC1D741BD800E8B018 /* RLMovieDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLMovieDetailController.m; sourceTree = "<group>"; };
+		8B11D3DD1D741BD800E8B018 /* RLMovieDetailController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLMovieDetailController.xib; sourceTree = "<group>"; };
+		8B25CDA31D742B9B0031DF3F /* RLGalleryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLGalleryController.h; sourceTree = "<group>"; };
+		8B25CDA41D742B9B0031DF3F /* RLGalleryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLGalleryController.m; sourceTree = "<group>"; };
+		8B25CDA51D742B9B0031DF3F /* RLGalleryController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLGalleryController.xib; sourceTree = "<group>"; };
+		8B25CDA91D742CF00031DF3F /* RLImageChildController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLImageChildController.h; sourceTree = "<group>"; };
+		8B25CDAA1D742CF00031DF3F /* RLImageChildController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLImageChildController.m; sourceTree = "<group>"; };
+		8B25CDAB1D742CF00031DF3F /* RLImageChildController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RLImageChildController.xib; sourceTree = "<group>"; };
 		8BB126A71D72A4C700B95ED7 /* RLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLRequest.h; sourceTree = "<group>"; };
 		8BB126A81D72A4C700B95ED7 /* RLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLRequest.m; sourceTree = "<group>"; };
 		8BB126AA1D72A56700B95ED7 /* RLMoviesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLMoviesController.h; sourceTree = "<group>"; };
@@ -226,6 +241,38 @@
 			name = RLWeb;
 			sourceTree = "<group>";
 		};
+		8B11D3DA1D741BCA00E8B018 /* RLMovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8B11D3DB1D741BD800E8B018 /* RLMovieDetailController.h */,
+				8B11D3DC1D741BD800E8B018 /* RLMovieDetailController.m */,
+				8B11D3DD1D741BD800E8B018 /* RLMovieDetailController.xib */,
+				8B25CDA21D742B6D0031DF3F /* RLGallery */,
+			);
+			name = RLMovieDetail;
+			sourceTree = "<group>";
+		};
+		8B25CDA21D742B6D0031DF3F /* RLGallery */ = {
+			isa = PBXGroup;
+			children = (
+				8B25CDA31D742B9B0031DF3F /* RLGalleryController.h */,
+				8B25CDA41D742B9B0031DF3F /* RLGalleryController.m */,
+				8B25CDA51D742B9B0031DF3F /* RLGalleryController.xib */,
+				8B25CDA81D742CE10031DF3F /* RLImageChild */,
+			);
+			name = RLGallery;
+			sourceTree = "<group>";
+		};
+		8B25CDA81D742CE10031DF3F /* RLImageChild */ = {
+			isa = PBXGroup;
+			children = (
+				8B25CDA91D742CF00031DF3F /* RLImageChildController.h */,
+				8B25CDAA1D742CF00031DF3F /* RLImageChildController.m */,
+				8B25CDAB1D742CF00031DF3F /* RLImageChildController.xib */,
+			);
+			name = RLImageChild;
+			sourceTree = "<group>";
+		};
 		8BB126A61D72A4BB00B95ED7 /* RLRequest */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +288,7 @@
 				8BB126AA1D72A56700B95ED7 /* RLMoviesController.h */,
 				8BB126AB1D72A56700B95ED7 /* RLMoviesController.m */,
 				8BB126AC1D72A56700B95ED7 /* RLMoviesController.xib */,
+				8B11D3DA1D741BCA00E8B018 /* RLMovieDetail */,
 				8BB126B71D72AE5A00B95ED7 /* RLMovieCell */,
 			);
 			name = RLMovies;
@@ -521,12 +569,15 @@
 				8B11D3B21D735EBE00E8B018 /* RLPlacesController.xib in Resources */,
 				8BB126C21D72AFD800B95ED7 /* RLCitiesController.xib in Resources */,
 				8B11D3B41D73600300E8B018 /* back.png in Resources */,
+				8B25CDA71D742B9B0031DF3F /* RLGalleryController.xib in Resources */,
 				8BDD58911D72A2B70066B7C0 /* Assets.xcassets in Resources */,
 				8B11D3C81D7368DE00E8B018 /* route.png in Resources */,
 				8BDD588F1D72A2B70066B7C0 /* IA-Prefix.pch in Resources */,
+				8B11D3DF1D741BD800E8B018 /* RLMovieDetailController.xib in Resources */,
 				8B11D3D91D7403C900E8B018 /* RLWebController.xib in Resources */,
 				8BB126BC1D72AE7700B95ED7 /* RLMovieCell.xib in Resources */,
 				8B11D3CC1D73F91B00E8B018 /* earth.png in Resources */,
+				8B25CDAD1D742CF00031DF3F /* RLImageChildController.xib in Resources */,
 				8B11D3BA1D7360F700E8B018 /* RLPlaceCell.xib in Resources */,
 				8B11D3CA1D73693D00E8B018 /* close.png in Resources */,
 				8B11D3BC1D73614500E8B018 /* compass.png in Resources */,
@@ -682,10 +733,13 @@
 				8B11D3B91D7360F700E8B018 /* RLPlaceCell.m in Sources */,
 				8BB126B31D72A5D200B95ED7 /* RLCustomizer.m in Sources */,
 				8BB126A91D72A4C700B95ED7 /* RLRequest.m in Sources */,
+				8B11D3DE1D741BD800E8B018 /* RLMovieDetailController.m in Sources */,
 				8BDD588D1D72A2B70066B7C0 /* AppDelegate.m in Sources */,
 				8BB126C11D72AFD800B95ED7 /* RLCitiesController.m in Sources */,
 				8BB126BB1D72AE7700B95ED7 /* RLMovieCell.m in Sources */,
 				8B11D3B11D735EBE00E8B018 /* RLPlacesController.m in Sources */,
+				8B25CDAC1D742CF00031DF3F /* RLImageChildController.m in Sources */,
+				8B25CDA61D742B9B0031DF3F /* RLGalleryController.m in Sources */,
 				8BB126C71D72B04200B95ED7 /* RLCityCell.m in Sources */,
 				8BDD588A1D72A2B70066B7C0 /* main.m in Sources */,
 				8B11D3C11D73651F00E8B018 /* RLMapPlaceController.m in Sources */,

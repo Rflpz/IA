@@ -72,11 +72,13 @@ static NSString *const METHOD_GET_MOVIES_BY_CITY = @"sqlite.aspx?idCiudad=";
         while ([s next]) {
             NSMutableDictionary *movie = [[NSMutableDictionary alloc] init];
             [movie setObject:[s stringForColumn:@"Titulo"] forKey:@"Titulo"];
-            [movie setObject:[s stringForColumn:@"Id"] forKey:@"Id"];
+            [movie setObject:[s stringForColumn:@"IdPelicula"] forKey:@"Id"];
             [movie setObject:[s stringForColumn:@"Genero"] forKey:@"Genero"];
             [movie setObject:[s stringForColumn:@"Clasificacion"] forKey:@"Clasificacion"];
             [movie setObject:[s stringForColumn:@"Director"] forKey:@"Director"];
             [movie setObject:[s stringForColumn:@"Sinopsis"] forKey:@"Sinopsis"];
+            [movie setObject:[s stringForColumn:@"Actores"] forKey:@"Actores"];
+
             [movies addObject:movie];
         }
         successBlock(movies);
@@ -112,5 +114,33 @@ static NSString *const METHOD_GET_MOVIES_BY_CITY = @"sqlite.aspx?idCiudad=";
         errorBlock(@"The file name can't be loaded");
     }
     
+}
+- (void)getImagesOfMovieFromDBWithPath:(NSString *)fileName
+                           withIdImage:(NSString *)imageId
+                            onComplete:(void (^)(NSMutableArray *response))successBlock
+                               onError:(void (^)(NSString *error))errorBlock{
+
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *pathDB = [documentsDirectory stringByAppendingPathComponent:fileName];
+    FMDatabase *db = [FMDatabase databaseWithPath:pathDB];
+    if ([db open]) {
+        FMResultSet *s = [db executeQuery:[NSString stringWithFormat:@"SELECT * FROM  Multimedia WHERE Multimedia.IdPelicula = %@  ",imageId]];
+        NSMutableArray *images = [[NSMutableArray alloc] init];
+        while ([s next]) {
+            NSMutableDictionary *image = [[NSMutableDictionary alloc] init];
+            [image setObject:[s stringForColumn:@"Tipo"] forKey:@"Tipo"];
+            if([[s stringForColumn:@"Tipo"] isEqualToString:@"Imagen"]){
+                [image setObject:[s stringForColumn:@"Archivo"] forKey:@"Archivo"];
+                [images addObject:image];
+
+            }
+        }
+        successBlock(images);
+    }else{
+        errorBlock(@"The file name can't be loaded");
+    }
+
 }
 @end

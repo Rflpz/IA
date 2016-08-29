@@ -113,6 +113,7 @@
     [_reqObj getMoviesFromDBWithPath:_fileDB andIdPlace:[_placesArray[indexPath.row] valueForKey:@"Id"] onComplete:^(NSMutableArray *response){
         RLMoviesController *moviesController = [[RLMoviesController alloc]initWithNibName:@"RLMoviesController" bundle:nil];
         moviesController.moviesArray = response;
+        moviesController.fileDB = _fileDB;
         [self.navigationController pushViewController:moviesController animated:YES];
     } onError:nil];
 }
