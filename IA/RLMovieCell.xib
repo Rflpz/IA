@@ -53,6 +53,7 @@
                     <constraint firstItem="gMZ-0J-b0J" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="vWm-Xk-2ki"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="movieGenere" destination="gMZ-0J-b0J" id="ASh-QS-lPb"/>
                 <outlet property="movieName" destination="GXx-7b-IWl" id="oc3-cJ-TRQ"/>

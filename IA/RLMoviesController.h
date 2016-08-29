@@ -11,5 +11,5 @@
 #import "RLRequest.h"
 
 @interface RLMoviesController : UIViewController
-@property (strong, nonatomic) NSString *fileDB;
+@property  (strong, nonatomic) NSMutableArray *moviesArray;
 @end

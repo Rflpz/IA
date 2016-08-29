@@ -10,7 +10,7 @@
 #import "RLPlaceCell.h"
 #import "RLMapPlaceController.h"
 #import "RLWebController.h"
-#import <SafariServices/SafariServices.h>
+#import "RLMoviesController.h"
 @interface RLPlacesController ()<UITableViewDelegate, UITableViewDataSource, RLMapPlaceDelegate>
 @property (strong, nonatomic) RLCustomizer *customizer;
 @property (strong, nonatomic) RLRequest *reqObj;
@@ -110,9 +110,10 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    NSLog(@"%@",_placesArray[indexPath.row]);
     [_reqObj getMoviesFromDBWithPath:_fileDB andIdPlace:[_placesArray[indexPath.row] valueForKey:@"Id"] onComplete:^(NSMutableArray *response){
-        NSLog(@"%@",response);
+        RLMoviesController *moviesController = [[RLMoviesController alloc]initWithNibName:@"RLMoviesController" bundle:nil];
+        moviesController.moviesArray = response;
+        [self.navigationController pushViewController:moviesController animated:YES];
     } onError:nil];
 }
 - (void)didSelectShowRoute:(RLMapPlaceController *)controller{
